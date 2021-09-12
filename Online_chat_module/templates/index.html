@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+          content="IE=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <script
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+</head>
+
+
+
+<body>
+    <h1>Halifax Foodie Chatbot</h1>
+    <div>
+        <div id="chatbox"
+             class="chatbox"
+             style="border: black;">
+            <p class="botText"
+               style="color: red;">
+                <span>Customer Chat
+                    session</span>
+            </p>
+        </div>
+        <div id="chatbox2"
+             class="chatbox2">
+            <p class="botText"
+               style="color: blue;">
+                <span>Customer service
+                    agent
+                    session</span>
+            </p>
+        </div>
+        <div id="userInput">
+            <input id="textInput"
+                   type="text"
+                   name="msg"
+                   placeholder="Customer input">
+            <input id="buttonInput"
+                   type="submit"
+                   value="Send">
+        </div>
+
+        <div id="userInput2">
+            <input id="textInput2"
+                   type="text2"
+                   name="msg2"
+                   placeholder="Online service input">
+            <input id="buttonInput2"
+                   type="submit"
+                   value="Send">
+        </div>
+        <script>
+            function getBotResponse() {
+                var rawText = $(
+                        "#textInput")
+                    .val();
+                var userHtml =
+                    '<p class = "userText"><span>' +
+                    'User:' +
+                    rawText +
+                    '</span></p>';
+                $("#textInput").val("");
+                $("#chatbox").append(
+                    userHtml);
+                $("#chatbox2").append(
+                    userHtml);
+                document.getElementById(
+                        'userInput')
+                    .scrollIntoView({
+                        block: 'start',
+                        behaviour: 'smooth'
+                    });
+                $.get("/get", {
+                    msg: rawText
+                }).done(function (
+                    data) {
+                    var botHtml =
+                        '<p class ="botText"><span>' +
+                        'Service Agent:' +
+                        data +
+                        '</span></p>';
+                    // $("#chatbox")
+                    //     .append(
+                    //         botHtml
+                    //     );
+                    // $("#chatbox2")
+                    //     .append(
+                    //         botHtml
+                    //     );
+                    document
+                        .getElementById(
+                            'userInput'
+                        )
+                        .scrollIntoView({
+                            block: 'start',
+                            behaviour: 'smooth'
+                        });
+                });
+            }
+            $("#textInput").keypress(
+                function (e) {
+                    if (e.which ==
+                        13) {
+                        getBotResponse
+                            ();
+                    }
+                });
+            $("#buttonInput").click(
+                function () {
+                    getBotResponse
+                        ();
+                })
+
+        </script>
+
+        <script>
+            function getBotResponse2() {
+                var rawText = $(
+                        "#textInput2")
+                    .val();
+                var userHtml =
+                    '<p class = "userText"><span>' +
+                    'Service Agent:' +
+                    rawText +
+                    '</span></p>';
+                $("#textInput2").val(
+                    "");
+                $("#chatbox").append(
+                    userHtml);
+                $("#chatbox2").append(
+                    userHtml);
+                document.getElementById(
+                        'userInput2')
+                    .scrollIntoView({
+                        block: 'start',
+                        behaviour: 'smooth'
+                    });
+                $.get("/get", {
+                    msg2: rawText
+                }).done(function (
+                    data) {
+                    var botHtml =
+                        '<p class ="botText"><span>' +
+                        'Service Agent:' +
+                        data +
+                        '</span></p>';
+                    // $("#chatbox")
+                    //     .append(
+                    //         botHtml
+                    //     );
+                    // $("#chatbox2")
+                    //     .append(
+                    //         botHtml
+                    //     );
+                    document
+                        .getElementById(
+                            'userInput2'
+                        )
+                        .scrollIntoView({
+                            block: 'start',
+                            behaviour: 'smooth'
+                        });
+                });
+            }
+            $("#textInput2").keypress(
+                function (e) {
+                    if (e.which ==
+                        13) {
+                        getBotResponse2
+                            ();
+                    }
+                });
+            $("#buttonInput2").click(
+                function () {
+                    getBotResponse2
+                        ();
+                })
+
+        </script>
+    </div>
+</body>
+
+</html>

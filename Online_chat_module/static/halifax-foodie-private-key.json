@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "serverless-project-320710",
+  "private_key_id": "c595a9ce53d826d0dec4c48575c3ae4c3dbfbded",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDZc/fcY+yGCIGZ\nBDS//Yhj/kBrPTLl8jG75QMkLk7sClZALPZ5h4+HIIFGX9OzaM8fYVPr+x+aVPIj\n9PQ2XEoXRtudp9Laohw4KyGYNzh3qZgTThL2N58chIb3wyYDFmOPsMHpoDU9R4C2\nI//Jh+enfqZfkt4US8goLOabHQWS0CaxK6fuim/s4E7gQT8Gv0IUC48wkEmXja7I\nv0x+zXVidaPkzxiXKwhiMiYT3M9X3+dRO2Z+aMt+UaHbKR3PVLZOgZDwJ9rjKXVQ\nq8zLWMFMEGYsKJR/vMlkB6ff/54OmPjo4cFyRJQm5HBlExKqw/FnNUvgVF3mpfcg\n7PApNBfZAgMBAAECggEAXx9kOyP4+O7qpkGZQ60IB1nW2zJzu/QU/nEhTSf2vTmO\nXlds4F/FEOLOuja8GFzOUhdUy0NYoT3siH8kf00i2gjUlCQwUBSfDJENipUJXgsx\nq6w5DjzpnON6WRKkY7BdECPNx8Gd2HcZXlPkFkgdtX7pD6DjBfTak3yEyjDJWd1m\nplPBkg1sKroiT2oXJZ2ycVDGvvJ/y3zWn3oAfxa+37oHvcHILt20/xbMJlkMO8GM\nJ2InOMZ8M1zJbfFmfTtEWk3gJwewhH3IES/c26LTwMIO2+/G6+rrq63kobjL4TL5\n0Fv1NnyBCXuCNl6H4XoDkCsIW+wWhnp6v4N7348KCwKBgQD08BuXqteOId9T9Bn+\n+eAusQ/HEicDzaB+DcFu2YI/Af7zbQvkMZ7yNmAOZLy0KlYl7VhablFKilJL1heM\niZHSgn4OV1ByRmTADOCM4vEME/WmgvmR719wix5dRbFxDgVB8oI3NgXVBlE6HnSU\neKPyc/ZXG9yZIS3x2M0QkmVQvwKBgQDjRha4tNQlwoAGzrMg2kgjG3IwQALnwCkm\n7EBDNfl3VfxLks9s6mdYxBUJOum8uL+/2tqiaqsBC8b3BQDPwtdbGd1ryqFTYox9\nqPxJVmq4/uKJEKHuerh1x00qujB6swPoJyUDq5iWc+f/VlL/1ijKkAzHtXLZTxoG\nZeOzrnslZwKBgCnMj+jiDscCoMoC7izFF6zgKoEeZ+oOPUVFs6znEYMPJCMGiPD4\nRteuz9Wk+08Dqo/uYRWNnfHKiSDH+FzTXT8/ZaOs4t2dhbQAfpGMaPZWsaUo1M5C\nu1bJZvUj35QbgGowqGgjn/sqiNISQHLV46SMhY14A71eHCkZhmU9lmyhAoGAUdsI\ni/X1ArSOz+Tad1am7J4R/nbPlRCMwcwNSSfDdcuuVrnFo4C5QCs/OFfTn3ka9sqo\nPB8XAAVx374ZkLqoPdOPACe2+wVffFLEqtVJEuAaTyuCZxYkIadqj50HoOmg2phe\nqHfBOU79m+VHd4V2o55GPBeKCeKHiQ5heHG7QLkCgYEA3qUnuClwkkCQac6/WW3G\nIuI3PE1RCK6mlObdrICApgjXUavmC+qVDwafSQxxLyjc0u2dRAI5UKQv1bf+lov+\nY2lI4pB4DyK3bfImtMgSIVYNnGwy6U/749JUZQBCFgrNRwzA4stt5ynoNrKNhifA\nSxfE4VXVfgcVzHpEDEDOKe4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "halifax-foodie-service@serverless-project-320710.iam.gserviceaccount.com",
+  "client_id": "114902625562977323693",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/halifax-foodie-service%40serverless-project-320710.iam.gserviceaccount.com"
+}

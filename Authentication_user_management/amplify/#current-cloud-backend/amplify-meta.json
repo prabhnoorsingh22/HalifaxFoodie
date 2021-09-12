@@ -1,0 +1,62 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-halifaxfoodie-dev-173401-authRole",
+      "UnauthRoleArn": "arn:aws:iam::346156791294:role/amplify-halifaxfoodie-dev-173401-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::346156791294:role/amplify-halifaxfoodie-dev-173401-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-halifaxfoodie-dev-173401-deployment",
+      "UnauthRoleName": "amplify-halifaxfoodie-dev-173401-unauthRole",
+      "StackName": "amplify-halifaxfoodie-dev-173401",
+      "StackId": "arn:aws:cloudformation:us-east-1:346156791294:stack/amplify-halifaxfoodie-dev-173401/fe367b10-ea62-11eb-9d51-0a9dd5d6e113",
+      "AmplifyAppId": "d2r9d2bulo8zf8"
+    }
+  },
+  "auth": {
+    "halifaxfoodieede582a6": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-halifaxfoodie-dev-173401-deployment/amplify-cfn-templates/auth/halifaxfoodieede582a6-cloudformation-template.yml",
+        "logicalId": "authhalifaxfoodieede582a6"
+      },
+      "lastPushTimeStamp": "2021-07-29T21:59:09.108Z",
+      "output": {
+        "UserPoolId": "us-east-1_dRW5epUw8",
+        "AppClientIDWeb": "61ds97tvnjckccsthbrjq14ngl",
+        "AppClientID": "70iutjsj9nqba3qmm9rafjube2",
+        "IdentityPoolId": "us-east-1:8d40f445-e34a-418c-8126-dab1f3fab232",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:346156791294:userpool/us-east-1_dRW5epUw8",
+        "IdentityPoolName": "halifaxfoodieede582a6_identitypool_ede582a6__dev",
+        "UserPoolName": "halifaxfoodieede582a6_userpool_ede582a6"
+      },
+      "lastPushDirHash": "FY2hJ9+hQTfLG+GwBYoNUcsVbQA="
+    }
+  },
+  "interactions": {
+    "lexe3370026": {
+      "service": "Lex",
+      "providerPlugin": "awscloudformation",
+      "build": true,
+      "lastPackageTimeStamp": "2021-07-29T21:57:32.483Z",
+      "distZipFilename": "lexe3370026-37476d7a42564e394e6c-build.zip",
+      "s3Bucket": {
+        "deploymentBucketName": "amplify-halifaxfoodie-dev-173401-deployment",
+        "s3Key": "amplify-builds/lexe3370026-37476d7a42564e394e6c-build.zip"
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-halifaxfoodie-dev-173401-deployment/amplify-cfn-templates/interactions/lexe3370026-cloudformation-template.json",
+        "logicalId": "interactionslexe3370026"
+      },
+      "lastPushTimeStamp": "2021-07-29T21:59:09.108Z",
+      "output": {
+        "FunctionArn": "arn:aws:lambda:us-east-1:346156791294:function:halifaxfoodie_cfnlambda_ab503519-dev",
+        "Region": "us-east-1",
+        "BotName": "BookTrip_dev"
+      },
+      "lastPushDirHash": "sE2k8xaK3QhPbdDaM7wxJqwaxhs="
+    }
+  }
+}
